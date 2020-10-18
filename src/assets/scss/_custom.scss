@@ -44,6 +44,38 @@
 .t-right{
   text-align: right;
 }
+.fz-14{
+  font-size: 14px;
+}
+.fz-16-18{
+  font-size: 16px;
+}
+.logo{
+  max-width: 54px;
+}
+
+// == align for layout
+.main-title{
+  line-height: 1;
+  Margin-bottom: 16px;
+}
+.header{
+  p{
+    font-size: 14px;
+    Margin-bottom: 4px;
+  }
+  .t-large{
+    font-size: 16px;
+  }
+  .order-text{
+    padding-top: 7px;
+    padding-bottom: 8px;
+  }
+}
+.my-castom{
+  Margin-top: 16px;
+  Margin-bottom: 2px;
+}
 .ticket-head .first{
   max-width: 47px;
 }
@@ -54,39 +86,96 @@
 .ticket-body{
   padding-left: 18px;
   background-image: url('../assets/img/line-bg.png');
-  background-size: 18px auto;
-  background-position: left 5px;
+  background-size: 24px auto;
+  background-position: -6px top;
   background-repeat: no-repeat;
+  p{
+    line-height: 1.6;
+  }
 }
 
 @media only screen and (min-width: 480px) {
+  .small-12.large-12.columns.first.last{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  body, table.body, p, td, th {
+    font-size: 14px;
+  }
   $global-font-size: 13px;
   $h3-font-size: 18px;
   $h4-font-size: 16px;
   $h5-font-size: 14px;
   $h6-font-size: 13px;
 }
-@media only screen and (min-width: 600px) {
-  $global-font-size: 14px;
-  $h1-font-size: 28px;
-  $h2-font-size: 28px;
-  $h3-font-size: 18px;
-  $h4-font-size: 16px;
-  $h5-font-size: 14px;
-  $h6-font-size: 13px;
+@media only screen and (min-width: 596px) {
+  .small-12.large-12.columns.first.last{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  body, table.body, h5, h6, p, td, th {
+    font-size: 16px;
+  }
+  h1, h2{
+    font-size: 28px;
+  }
+  h3{
+    //font-size: 18px;
+    font-size: 22px;
+    padding-top: 7px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  .main-title {
+    padding-top: 4px;
+    Margin-bottom: 23px;
+  }
+  .header{
+    p{
+      font-size: 16px;
+    }
+    .t-large{
+      font-size: 20px;
+      Margin-bottom: 8px;
+    }
+  }
+  h3 + .t-bronze{
+    padding-bottom: 5px;
+  }
+  .fz-16-18{
+    font-size: 18px;
+  }
   .ticket-body{
     padding-left: 27px;
     background-position: left top;
     background-size: 27px auto;
   }
-  .ticket-head{
-    .first{
+  table.row.ticket-head{
+      .columns{
+        padding-bottom: 10px;
+      }
+     th.columns.first {
       max-width: 34px;
       padding-right: 0;
+      padding-left: 4px !important;
+      padding-top: 4px;
     }
     .airlines{
-      padding-left: 0;
+      padding-left: 4px;
     }
   }
 
+}
+
+
+element.style {
+}
+@media only screen and (max-width: 596px) {
+  table.body .show-for-large {
+    display: none !important;
+    width: 0;
+    mso-hide: all;
+    overflow: hidden;
+  }
 }

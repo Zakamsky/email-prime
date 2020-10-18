@@ -8,8 +8,9 @@ img-link: https://elkin.dev
 <!--todo-main: preheader-->
 <!--todo-main: links from image ^ variable-->
 <!--todo-main: image from path ^ variable-->
-
-<spacer size="24"></spacer>
+<div class="show-for-large">
+  <spacer size="24" class=""></spacer>
+</div>
 
 <container class="main">
   {{> header}}
@@ -19,9 +20,9 @@ img-link: https://elkin.dev
       <h3 class="t-dark pass-title">Пассажиры</h3>
       <h4 class="t-gray name">Mr Ivan ivanov</h4>
 
-      <spacer size="16" class="border-b"></spacer>
+      <spacer size="8" class="border-b"></spacer>
 
-      <h3 class="t-dark">Состав заказа</h3>
+      <h3 class="t-dark my-castom">Состав заказа</h3>
       <p class="t-bronze">Везде указанно местое время</p>
 
       {{> ticket}}
@@ -32,18 +33,15 @@ img-link: https://elkin.dev
     <p>По любым вопросам вы можете обратиться к вашему персональному ассистенту по телефону</p>
 
 
-    <spacer size="16"></spacer>
+<!--    <spacer size="16"></spacer>-->
 
     </columns>
   </row>
   {{> footer}}
 </container>
 
-<spacer size="16"></spacer>
 
-<center>
-  <p>Место для копирайтов или отписки - <a href="{{img-link}}">Ссылка</a></p>
-</center>
+
 
 <spacer size="16"></spacer>
 
