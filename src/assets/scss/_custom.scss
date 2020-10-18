@@ -1,0 +1,92 @@
+.header,
+.body,
+.footer{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.main{
+  box-shadow: 2px 2px 11px 0 #d7d7d7;
+}
+.header{
+  background-color: #414141;
+  color: $white
+}
+.footer{
+  background-color: #F1F1F1;
+}
+.t-white{
+  color: $white;
+}
+.t-gray{
+  color: #949494;
+}
+.t-dark{
+  color: $black;
+}
+.t-bronze{
+  color: $bronze-color;
+}
+.t-primary{
+  color: $primary-color;
+}
+.border{
+  border: 1px solid #E0E0E0;
+}
+.border-b{
+  border-bottom: 1px solid #E0E0E0;
+}
+.pb-0{
+  padding-bottom: 0 !important;
+}
+.mb-0{
+  Margin-bottom: 0;
+}
+.t-right{
+  text-align: right;
+}
+.ticket-head .first{
+  max-width: 47px;
+}
+.plane{
+  Margin-right: 0;
+  max-width: 34px;
+}
+.ticket-body{
+  padding-left: 18px;
+  background-image: url('../assets/img/line-bg.png');
+  background-size: 18px auto;
+  background-position: left 5px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 480px) {
+  $global-font-size: 13px;
+  $h3-font-size: 18px;
+  $h4-font-size: 16px;
+  $h5-font-size: 14px;
+  $h6-font-size: 13px;
+}
+@media only screen and (min-width: 600px) {
+  $global-font-size: 14px;
+  $h1-font-size: 28px;
+  $h2-font-size: 28px;
+  $h3-font-size: 18px;
+  $h4-font-size: 16px;
+  $h5-font-size: 14px;
+  $h6-font-size: 13px;
+  .ticket-body{
+    padding-left: 27px;
+    background-position: left top;
+    background-size: 27px auto;
+  }
+  .ticket-head{
+    .first{
+      max-width: 34px;
+      padding-right: 0;
+    }
+    .airlines{
+      padding-left: 0;
+    }
+  }
+
+}
