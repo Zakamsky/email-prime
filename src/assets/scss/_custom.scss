@@ -39,6 +39,7 @@
   padding-bottom: 0 !important;
 }
 .mb-0{
+  margin-bottom: 0;
   Margin-bottom: 0;
 }
 .t-right{
@@ -57,11 +58,13 @@
 // == align for layout
 .main-title{
   line-height: 1;
+  margin-bottom: 16px;
   Margin-bottom: 16px;
 }
 .header{
   p{
     font-size: 14px;
+    margin-bottom: 4px;
     Margin-bottom: 4px;
   }
   .t-large{
@@ -73,19 +76,22 @@
   }
 }
 .my-castom{
+  margin-top: 16px;
   Margin-top: 16px;
+  margin-bottom: 2px;
   Margin-bottom: 2px;
 }
 .ticket-head .first{
   max-width: 47px;
 }
 .plane{
+  margin-right: 0;
   Margin-right: 0;
   max-width: 34px;
 }
 .ticket-body{
   padding-left: 18px;
-  background-image: url('../assets/img/line-bg.png');
+  background-image: url('https://raw.githubusercontent.com/Zakamsky/Zakamsky.github.io/master/files/line-bg.png');
   background-size: 24px auto;
   background-position: -6px top;
   background-repeat: no-repeat;
@@ -94,88 +100,98 @@
   }
 }
 
+  th.callout-inner{
+    padding: 15px !important;
+  }
+
 @media only screen and (min-width: 480px) {
   .small-12.large-12.columns.first.last{
     padding-left: 24px !important;
     padding-right: 24px !important;
   }
-  body, table.body, p, td, th {
-    font-size: 14px;
+  .header .columns {
+    padding-bottom: 24px !important;
   }
-  $global-font-size: 13px;
-  $h3-font-size: 18px;
-  $h4-font-size: 16px;
-  $h5-font-size: 14px;
-  $h6-font-size: 13px;
+  body, table.body, p, td, th {
+    font-size: 14px !important;
+  }
+  th.callout-inner{
+    padding: 14px !important;
+  }
+
 }
 @media only screen and (min-width: 596px) {
   .small-12.large-12.columns.first.last{
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
+  .header .columns {
+    padding-bottom: 34px !important;
+  }
   body, table.body, h5, h6, p, td, th {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   h1, h2{
-    font-size: 28px;
+    font-size: 28px !important;
   }
   h3{
     //font-size: 18px;
-    font-size: 22px;
-    padding-top: 7px;
+    font-size: 22px !important;
+    padding-top: 7px !important;
   }
   h4{
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .main-title {
-    padding-top: 4px;
-    Margin-bottom: 23px;
+    padding-top: 4px !important;
+    margin-bottom: 23px !important;
+    Margin-bottom: 23px !important;
   }
   .header{
     p{
-      font-size: 16px;
+      font-size: 16px !important;
     }
     .t-large{
-      font-size: 20px;
-      Margin-bottom: 8px;
+      font-size: 20px !important;
+      margin-bottom: 8px !important;
+      Margin-bottom: 8px !important;
     }
   }
   h3 + .t-bronze{
-    padding-bottom: 5px;
+    padding-bottom: 5px !important;
   }
   .fz-16-18{
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .ticket-body{
-    padding-left: 27px;
-    background-position: left top;
-    background-size: 27px auto;
+    padding-left: 27px  !important;
+    background-position: left top  !important;
+    background-size: 27px auto  !important;
   }
   table.row.ticket-head{
       .columns{
-        padding-bottom: 10px;
+        padding-bottom: 10px !important;
       }
      th.columns.first {
       max-width: 34px;
       padding-right: 0;
       padding-left: 4px !important;
-      padding-top: 4px;
+      padding-top: 4px !important;
     }
     .airlines{
-      padding-left: 4px;
+      padding-left: 4px !important;
     }
   }
-
+  th.callout-inner{
+    padding: 16px !important;
+  }
 }
 
-
-element.style {
-}
 @media only screen and (max-width: 596px) {
   table.body .show-for-large {
     display: none !important;
-    width: 0;
-    mso-hide: all;
-    overflow: hidden;
+    width: 0  !important;
+    mso-hide: all  !important;
+    overflow: hidden  !important;
   }
 }
